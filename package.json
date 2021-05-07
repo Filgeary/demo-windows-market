@@ -1,0 +1,29 @@
+{
+  "name": "demo-windows-market",
+  "version": "1.0.0",
+  "private": "true",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
+  },
+  "browserslist": [
+    "defaults",
+    "not IE 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "babel-loader": "^8.0.6",
+    "browser-sync": "^2.26.7",
+    "core-js": "^3.4.2",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "webpack": "^4.41.2",
+    "webpack-stream": "^5.2.1"
+  },
+  "engines": {
+    "node": "12.x",
+    "npm": "6.x"
+  }
+}
