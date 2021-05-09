@@ -41,6 +41,7 @@
               <div class="header_btn_wrap_block">
                 <button
                   class="header_btn text-uppercase text-left popup_engineer_btn"
+                  data-show-popup-engineer
                 >
                   Вызвать <br />замерщика
                 </button>
@@ -64,7 +65,9 @@
                   ><img src="assets/img/header/phone.png" alt="#" />+7 (495)
                   646-61-71</a
                 >
-                <a class="phone_link" href="#">Заказать обратный звонок</a>
+                <a class="phone_link" data-show-popup href="#"
+                  >Заказать обратный звонок</a
+                >
               </div>
             </div>
           </div>
@@ -1128,7 +1131,9 @@
       <div class="container">
         <div class="feedback_block text-center">
           <h3>Остались вопросы?</h3>
-          <a class="phone_link" href="#">Спросите у нашего специалиста!</a>
+          <a class="phone_link" data-show-popup href="#"
+            >Спросите у нашего специалиста!</a
+          >
         </div>
       </div>
     </section>
@@ -1157,11 +1162,11 @@
 
     <!-- Modals -->
     <!-- Request a call -->
-    <div class="popup">
+    <div class="popup" data-popup>
       <div class="popup_dialog">
         <div class="popup_content text-center">
-          <button type="button" class="popup_close">
-            <strong>&times;</strong>
+          <button type="button" class="popup_close" data-popup-close>
+            &times;
           </button>
           <div class="popup_form">
             <form class="form" action="#">
@@ -1195,11 +1200,11 @@
     </div>
 
     <!-- Request an engineer -->
-    <div class="popup_engineer">
+    <div class="popup_engineer" data-popup-engineer>
       <div class="popup_dialog">
         <div class="popup_content text-center">
-          <button type="button" class="popup_close">
-            <strong>&times;</strong>
+          <button type="button" class="popup_close" data-popup-engineer-close>
+            &times;
           </button>
           <div class="popup_form">
             <form class="form" action="#">
