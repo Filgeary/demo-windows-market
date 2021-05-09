@@ -158,7 +158,7 @@
     </main>
 
     <!-- Glazing -->
-    <section class="glazing">
+    <section class="glazing" data-tabs-cont-glazing>
       <div class="container">
         <div class="section_header">
           <h2>Остекление балконов и лоджий</h2>
@@ -167,13 +167,17 @@
 
         <!-- Slider -->
         <div class="glazing_slider">
-          <div class="glazing_block text-center wow fadeInUp">
+          <div
+            class="glazing_block text-center wow fadeInUp"
+            data-tab-toggle-glazing
+          >
             <img src="assets/img/glazing/icons/1.png" alt="#" />
             <a class="tree_link">Деревянное <br />остекление</a>
           </div>
           <div
             class="glazing_block text-center wow fadeInUp"
             data-wow-delay="0.1s"
+            data-tab-toggle-glazing
           >
             <img src="assets/img/glazing/icons/2.png" alt="#" />
             <a class="aluminum_link">Алюминиевое <br />остекление</a>
@@ -181,6 +185,7 @@
           <div
             class="glazing_block text-center wow fadeInUp"
             data-wow-delay="0.2s"
+            data-tab-toggle-glazing
           >
             <img src="assets/img/glazing/icons/3.png" alt="#" />
             <a class="plastic_link"
@@ -190,6 +195,7 @@
           <div
             class="glazing_block text-center wow fadeInUp"
             data-wow-delay="0.3s"
+            data-tab-toggle-glazing
           >
             <img src="assets/img/glazing/icons/4.png" alt="#" />
             <a class="french_link"
@@ -199,6 +205,7 @@
           <div
             class="glazing_block text-center wow fadeInUp"
             data-wow-delay="0.4s"
+            data-tab-toggle-glazing
           >
             <img src="assets/img/glazing/icons/5.png" alt="#" />
             <a class="rise_link">Остекление <br />с выносом</a>
@@ -206,7 +213,7 @@
         </div>
 
         <!-- Tree -->
-        <div class="row tree glazing_content">
+        <div class="row tree glazing_content" data-tab-item-glazing>
           <div class="col-md-6 no-padding">
             <div class="glazing_cold">
               <h3>Холодное</h3>
@@ -252,7 +259,7 @@
         <!-- /Tree -->
 
         <!-- Aluminum -->
-        <div class="row aluminum glazing_content">
+        <div class="row aluminum glazing_content" data-tab-item-glazing>
           <div class="col-md-6 no-padding">
             <div class="glazing_cold">
               <h3>Холодное</h3>
@@ -298,7 +305,7 @@
         <!-- /Aluminum -->
 
         <!-- Plastic -->
-        <div class="row plastic glazing_content">
+        <div class="row plastic glazing_content" data-tab-item-glazing>
           <div class="col-md-6 col-md-offset-3 no-padding">
             <div class="glazing_warm">
               <h3>теплое</h3>
@@ -323,7 +330,7 @@
         <!-- /Plastic -->
 
         <!-- French -->
-        <div class="row french glazing_content">
+        <div class="row french glazing_content" data-tab-item-glazing>
           <div class="col-md-6 no-padding">
             <div class="glazing_cold">
               <h3>Пластик</h3>
@@ -369,7 +376,7 @@
         <!-- /French -->
 
         <!-- Rise -->
-        <div class="row rise glazing_content">
+        <div class="row rise glazing_content" data-tab-item-glazing>
           <div class="col-md-6 no-padding">
             <div class="glazing_cold">
               <h3>Алюминий</h3>
@@ -417,7 +424,7 @@
     </section>
 
     <!-- Decoration -->
-    <section class="decoration">
+    <section class="decoration" data-tabs-cont-decoration>
       <div class="container">
         <div class="section_header">
           <h2>ЗАКАЖИТЕ ОТДЕЛКУ БАЛКОНА СО СКИДКОЙ 60%!</h2>
@@ -427,25 +434,34 @@
         <!-- Slider -->
         <div class="decoration_slider">
           <div class="decoration_item wow fadeInUp">
-            <div class="internal_link no_click after_click">
+            <div
+              class="internal_link no_click after_click"
+              data-tab-toggle-decoration
+            >
               <a>Внутренняя отделка</a>
             </div>
           </div>
           <div class="decoration_item wow fadeInUp" data-wow-delay="0.1s">
-            <div class="external_link no_click"><a>Внешняя отделка</a></div>
+            <div class="external_link no_click" data-tab-toggle-decoration>
+              <a>Внешняя отделка</a>
+            </div>
           </div>
           <div class="decoration_item wow fadeInUp" data-wow-delay="0.2s">
-            <div class="rising_link no_click"><a>Выносное остекление</a></div>
+            <div class="rising_link no_click" data-tab-toggle-decoration>
+              <a>Выносное остекление</a>
+            </div>
           </div>
           <div class="decoration_item wow fadeInUp" data-wow-delay="0.3s">
-            <div class="roof_link no_click"><a>Крыша на балкон</a></div>
+            <div class="roof_link no_click" data-tab-toggle-decoration>
+              <a>Крыша на балкон</a>
+            </div>
           </div>
         </div>
 
         <div class="decoration_content">
           <div class="row">
             <!-- internal -->
-            <div class="internal">
+            <div class="internal" data-tab-item-decoration>
               <div
                 class="col-lg-3 col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2 no-padding"
               >
@@ -543,7 +559,7 @@
             <!-- /internal -->
 
             <!-- external -->
-            <div class="external">
+            <div class="external" data-tab-item-decoration>
               <div
                 class="col-lg-3 col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2 no-padding"
               >
@@ -633,7 +649,7 @@
             <!-- .external -->
 
             <!-- rising -->
-            <div class="rising">
+            <div class="rising" data-tab-item-decoration>
               <div
                 class="col-lg-3 col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2 no-padding"
               >
@@ -713,7 +729,7 @@
             <!-- /rising -->
 
             <!-- roof -->
-            <div class="roof">
+            <div class="roof" data-tab-item-decoration>
               <div
                 class="col-lg-3 col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2 no-padding"
               >
