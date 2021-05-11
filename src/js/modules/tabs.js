@@ -1,4 +1,10 @@
-const tabs = ({ tabContainer, tabToggle, tabItem, activeClass }) => {
+const tabs = ({
+  tabContainer,
+  tabToggle,
+  tabItem,
+  activeClass,
+  displayValue = 'block',
+}) => {
   const tabCont = document.querySelector(tabContainer);
   const tabToggles = tabCont.querySelectorAll(tabToggle);
   const tabItems = tabCont.querySelectorAll(tabItem);
@@ -14,7 +20,7 @@ const tabs = ({ tabContainer, tabToggle, tabItem, activeClass }) => {
   }
 
   function showTabs(i = 0) {
-    tabItems[i].style.display = 'block';
+    tabItems[i].style.display = displayValue;
     tabToggles[i].classList.add(activeClass.replace(/\./, ''));
   }
 

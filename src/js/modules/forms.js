@@ -1,6 +1,6 @@
 import { postDataJSON } from '../api';
 
-const forms = (url, timerId) => {
+const forms = (url, timerId, state) => {
   const statusMessage = {
     pending: 'Ожидание заказа...',
     success: 'Ваша заявка принята!',
@@ -28,6 +28,16 @@ const forms = (url, timerId) => {
       target.appendChild(statusElement);
 
       const dataForm = new FormData(target);
+
+      if (target.hasAttribute('data-form-calc-end')) {
+        for (const key in state) {
+          if (Object.hasOwnProperty.call(state, key)) {
+            const value = state[key];
+            dataForm.append(key, value);
+          }
+        }
+      }
+
       const dataJSON = JSON.stringify(Object.fromEntries(dataForm.entries()));
 
       postDataJSON(url, dataJSON)

@@ -6,6 +6,7 @@ import './slider';
 // modules
 import { openModal, modals } from './modules/modals';
 import tabs from './modules/tabs';
+import formState from './formState';
 import forms from './modules/forms';
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -20,6 +21,21 @@ window.addEventListener('DOMContentLoaded', () => {
       trigger: '[data-show-popup]',
       modalWrapper: '[data-popup]',
       closeModal: '[data-popup-close]',
+    },
+    {
+      trigger: '[data-show-popup-calc]',
+      modalWrapper: '[data-popup-calc]',
+      closeModal: '[data-popup-calc-close]',
+    },
+    {
+      trigger: '[data-show-popup-calc-profile]',
+      modalWrapper: '[data-popup-calc-profile]',
+      closeModal: '[data-popup-calc-profile-close]',
+    },
+    {
+      trigger: '[data-show-popup-calc-end]',
+      modalWrapper: '[data-popup-calc-end]',
+      closeModal: '[data-popup-calc-end-close]',
     },
   ];
 
@@ -37,7 +53,10 @@ window.addEventListener('DOMContentLoaded', () => {
     postDataJSON: 'https://jsonplaceholder.typicode.com/posts',
   };
 
+  const dataState = {};
+
   // Main Modules
+  formState(dataState);
   modals(modalSelectors, timerIdPopup);
   tabs({
     tabContainer: '[data-tabs-cont-glazing]',
@@ -51,5 +70,12 @@ window.addEventListener('DOMContentLoaded', () => {
     tabItem: '[data-tab-item-decoration]',
     activeClass: 'after_click',
   });
-  forms(URL.postDataJSON, timerIdPopup);
+  tabs({
+    tabContainer: '[data-tabs-cont-balcon-icons]',
+    tabToggle: '[data-tab-toggle-balcon-icons]',
+    tabItem: '[data-tab-item-balcon-icons]',
+    activeClass: 'do_image_more',
+    displayValue: 'inline-block',
+  });
+  forms(URL.postDataJSON, timerIdPopup, dataState);
 });
