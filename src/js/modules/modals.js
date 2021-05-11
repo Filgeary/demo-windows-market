@@ -10,11 +10,20 @@ const modals = (selectors, timerId) => {
 
       if (target && target.matches(trigger)) {
         evt.preventDefault();
+
+        const mappedSelectors = selectors.map((item) => item.modalWrapper);
+        for (const selector of mappedSelectors) {
+          const elements = document.querySelectorAll(selector);
+          elements.forEach((item) => (item.style.display = 'none'));
+        }
+
         document.querySelector(modalWrapper).style.display = 'block';
         clearTimeout(timerId);
       } else if (
         target &&
-        (target.matches(modalWrapper) || target.matches(closeModal))
+        (target.matches(modalWrapper) ||
+          target.matches(closeModal) ||
+          target.closest(closeModal))
       ) {
         evt.preventDefault();
         target.closest(modalWrapper).style.display = 'none';
