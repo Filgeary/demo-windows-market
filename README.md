@@ -7,3 +7,4 @@
 - Forms (post Data via fetch)
 - Calculator Form
 - Timer
+- Image Popup
