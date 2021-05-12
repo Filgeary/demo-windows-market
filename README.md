@@ -6,3 +6,4 @@
 - Tabs
 - Forms (post Data via fetch)
 - Calculator Form
+- Timer
