@@ -9,6 +9,7 @@ import tabs from './modules/tabs';
 import formState from './formState';
 import forms from './modules/forms';
 import timer from './modules/timer';
+import popupImages from './modules/popupImages';
 
 window.addEventListener('DOMContentLoaded', () => {
   // modal selectors
@@ -84,5 +85,10 @@ window.addEventListener('DOMContentLoaded', () => {
     deadlineString: '2021-08-11',
     titleTimerSelector: '[data-timer-sale-text-cont]',
     titleTimerEndText: 'К сожалению, Акция уже закончилась...',
+  });
+  popupImages({
+    contSelector: '[data-section-works]',
+    imageSelector: '.preview',
+    popupSelector: '.popup',
   });
 });
