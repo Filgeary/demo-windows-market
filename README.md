@@ -8,3 +8,4 @@
 - Calculator Form
 - Timer
 - Image Popup
+- Custom Scrollbar Styling
