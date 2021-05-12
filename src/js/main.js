@@ -8,6 +8,7 @@ import { openModal, modals } from './modules/modals';
 import tabs from './modules/tabs';
 import formState from './formState';
 import forms from './modules/forms';
+import timer from './modules/timer';
 
 window.addEventListener('DOMContentLoaded', () => {
   // modal selectors
@@ -78,4 +79,10 @@ window.addEventListener('DOMContentLoaded', () => {
     displayValue: 'inline-block',
   });
   forms(URL.postDataJSON, timerIdPopup, dataState);
+  timer({
+    timerSelector: '[data-timer-sale-cont]',
+    deadlineString: '2021-08-11',
+    titleTimerSelector: '[data-timer-sale-text-cont]',
+    titleTimerEndText: 'К сожалению, Акция уже закончилась...',
+  });
 });
