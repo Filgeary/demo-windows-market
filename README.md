@@ -9,3 +9,4 @@
 - Timer
 - Image Popup
 - Custom Scrollbar Styling
+- add webp & optimizations
