@@ -55,6 +55,7 @@ window.addEventListener('DOMContentLoaded', () => {
     postDataJSON: 'https://jsonplaceholder.typicode.com/posts',
   };
 
+  // form data state
   const dataState = {};
 
   // Main Modules
