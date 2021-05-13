@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bitter', 'Arial', sans-serif;
   font-weight: 400;
   font-style: normal;
   color: hsl(0, 0%, 10%);
@@ -83,7 +83,7 @@ textarea:focus {
 .form h2 {
   margin-bottom: 3rem;
   font-size: 2rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bitter', 'Arial', sans-serif;
   font-weight: 700;
   font-style: normal;
   color: #333333;
@@ -153,7 +153,7 @@ textarea:focus {
 .button {
   padding: 2.5rem 0rem;
   font-size: 1.7rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bitter', 'Arial', sans-serif;
   font-weight: 700;
   font-style: normal;
   border: 1px solid #ffc600;
@@ -183,7 +183,7 @@ textarea:focus {
 .section_header h2 {
   font-size: 3rem;
   line-height: 1.4;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bitter', 'Arial', sans-serif;
   font-weight: 700;
   font-style: normal;
   color: #333333;
@@ -259,7 +259,7 @@ textarea:focus {
   background-color: #ffffff;
   font-size: 1.4rem;
   line-height: 1.2;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bitter', 'Arial', sans-serif;
   font-weight: 700;
   font-style: normal;
   color: #55a831;
@@ -315,7 +315,7 @@ textarea:focus {
 }
 
 .header .working_hours p span {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bitter', 'Arial', sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 1.8rem;
@@ -336,7 +336,7 @@ textarea:focus {
 .header .contact_us_wrap a {
   display: block;
   font-size: 2.3rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bitter', 'Arial', sans-serif;
   font-weight: 700;
   font-style: normal;
   color: #333333;
@@ -349,7 +349,7 @@ textarea:focus {
 
 .header .contact_us_wrap .phone_link {
   font-size: 1.5rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bitter', 'Arial', sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #0089cd;
@@ -359,7 +359,13 @@ textarea:focus {
 /*Main*/
 .main {
   padding: 10rem 0;
+}
+
+.no-webp .main {
   background: #ffffff url(../img/main/bg.png) 0 0 no-repeat;
+}
+.webp .main {
+  background: #ffffff url(../img/main/bg.webp) 0 0 no-repeat;
 }
 
 .main h1 {
@@ -367,7 +373,7 @@ textarea:focus {
   /*margin-top: -4rem;*/
   font-size: 5.5rem;
   line-height: 1.5;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bitter', 'Arial', sans-serif;
   font-weight: 700;
   font-style: normal;
   color: #333333;
@@ -394,7 +400,7 @@ textarea:focus {
   margin-top: -6rem;
   font-size: 1.3rem;
   line-height: 1.3;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bitter', 'Arial', sans-serif;
   font-weight: 700;
   font-style: normal;
   text-transform: uppercase;
@@ -460,7 +466,7 @@ textarea:focus {
 .glazing_cold h3 {
   margin-bottom: 2.5rem;
   font-size: 2rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bitter', 'Arial', sans-serif;
   font-weight: 700;
   font-style: normal;
   text-transform: uppercase;
@@ -493,7 +499,7 @@ textarea:focus {
 .glazing_warm h3 {
   margin-bottom: 2.5rem;
   font-size: 2rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bitter', 'Arial', sans-serif;
   font-weight: 700;
   font-style: normal;
   text-transform: uppercase;
@@ -531,14 +537,14 @@ textarea:focus {
   vertical-align: middle;
   font-size: 2rem;
   line-height: 1.7;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bitter', 'Arial', sans-serif;
   font-weight: 700;
   font-style: normal;
 }
 
 .glazing_price p span {
   font-size: 1.4rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bitter', 'Arial', sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -639,7 +645,7 @@ textarea:focus {
 
 .decoration_content_material p {
   font-size: 1.4rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bitter', 'Arial', sans-serif;
   font-weight: 700;
   font-style: normal;
   color: #0089cd;
@@ -648,7 +654,7 @@ textarea:focus {
 .decoration_content_material p span {
   display: block;
   font-size: 1.2rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bitter', 'Arial', sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #000000;
@@ -744,13 +750,19 @@ textarea:focus {
 /*Sale*/
 .sale {
   padding: 8rem 0;
+}
+
+.no-webp .sale {
   background: #ffffff url(../img/sale/bg.jpg) center center no-repeat;
+}
+.webp .sale {
+  background: #ffffff url(../img/sale/bg.webp) center center no-repeat;
 }
 
 .sale_title {
   margin-bottom: 8rem;
   font-size: 4.8rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bitter', 'Arial', sans-serif;
   font-weight: 700;
   font-style: normal;
   text-transform: uppercase;
@@ -790,7 +802,7 @@ textarea:focus {
   margin-right: 2px;
   background-color: #575757;
   border-radius: 7px;
-  padding: 4px;
+  padding: 8px;
 }
 .description1 {
   font-size: 18px;
@@ -821,7 +833,7 @@ textarea:focus {
 }
 
 .contacts_info p span {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bitter', 'Arial', sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -886,7 +898,7 @@ textarea:focus {
 
 .footer .contacts .phone {
   font-size: 1.8rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bitter', 'Arial', sans-serif;
   font-weight: 700;
   font-style: normal;
   color: #333333;
@@ -983,7 +995,7 @@ textarea:focus {
 .popup_calc_content h2 {
   margin-bottom: 3rem;
   font-size: 3rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bitter', 'Arial', sans-serif;
   font-weight: 700;
   font-style: normal;
   color: #333333;
@@ -1076,7 +1088,7 @@ textarea:focus {
 .popup_calc_profile_content h2 {
   margin-bottom: 3rem;
   font-size: 3rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Bitter', 'Arial', sans-serif;
   font-weight: 700;
   font-style: normal;
   color: #333333;
@@ -1134,7 +1146,7 @@ textarea:focus {
 
 .popup_calc_profile_content .label {
   padding: 1.3rem 2rem;
-  z-index: 18rem;
+  /* z-index: 18rem; */
   color: #000000;
   font-size: 1.5rem;
   font-weight: 500;
@@ -1188,7 +1200,7 @@ textarea:focus {
   }
 
   .header .working_hours p span {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Bitter', 'Arial', sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 1.6rem;
@@ -1267,7 +1279,7 @@ textarea:focus {
 
   .header .working_hours p span {
     display: block;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Bitter', 'Arial', sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 1.6rem;
@@ -1358,7 +1370,14 @@ textarea:focus {
 
   .sale {
     padding: 5rem 0;
+  }
+
+  .no-webp .sale {
     background: #ffffff url(../img/sale/bg.jpg) right center no-repeat;
+    background-size: cover;
+  }
+  .webp .sale {
+    background: #ffffff url(../img/sale/bg.webp) right center no-repeat;
     background-size: cover;
   }
 
@@ -1521,7 +1540,7 @@ textarea:focus {
 
   .footer .contacts .phone {
     font-size: 1.8rem;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Bitter', 'Arial', sans-serif;
     font-weight: 700;
     font-style: normal;
     color: #333333;
@@ -1641,7 +1660,14 @@ textarea:focus {
   .main {
     padding: 3rem 0;
     padding-bottom: 5rem;
+  }
+
+  .no-webp .main {
     background: #ffffff url(../img/main/bg.png) 0 0 no-repeat;
+    background-size: cover;
+  }
+  .webp .main {
+    background: #ffffff url(../img/main/bg.webp) 0 0 no-repeat;
     background-size: cover;
   }
 

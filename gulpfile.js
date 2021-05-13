@@ -48,7 +48,7 @@ gulp.task('watch', () => {
     port: 4000,
     notify: false,
     open: false,
-    cors: false,
+    cors: true,
     ui: false,
   });
 

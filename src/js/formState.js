@@ -27,7 +27,8 @@ const formState = (state) => {
               }
             });
           } else {
-            state[prop] = item.value.replace(/\D/, '');
+            item.value = item.value.replace(/\D/, '');
+            state[prop] = item.value;
           }
         }
 

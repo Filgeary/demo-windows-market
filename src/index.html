@@ -4,16 +4,26 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="/favicon.ico" />
+    <meta name="description" content="Остекление балконов и лоджий" />
     <title>Ирвас окна</title>
-    <link href="assets/css/bootstrap.css" rel="stylesheet" />
 
-    <!-- Fonts -->
+    <!-- Preload Critical Assets -->
     <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:400,700"
-      rel="stylesheet"
+      rel="preload"
+      href="assets/img/main/bg.webp"
+      as="image"
+      type="image/webp"
     />
 
+    <!-- CSS libs -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter&display=swap"
+      rel="stylesheet"
+    />
     <!-- Slick Slider -->
     <link rel="stylesheet" href="assets/slick/slick.css" />
     <link rel="stylesheet" href="assets/slick/slick-theme.css" />
@@ -21,6 +31,14 @@
     <!-- Animate -->
     <link rel="stylesheet" href="assets/css/animate.min.css" />
     <link href="assets/css/style.css" rel="stylesheet" />
+
+    <!-- detect webp -->
+    <script>
+      // prettier-ignore
+      /*! modernizr 3.6.0 (Custom Build) | MIT *
+       * https://modernizr.com/download/?-webp !*/
+      !function(e,n,A){function o(e,n){return typeof e===n}function a(){var e,n,A,a,t,i,r;for(var l in s)if(s.hasOwnProperty(l)){if(e=[],n=s[l],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(A=0;A<n.options.aliases.length;A++)e.push(n.options.aliases[A].toLowerCase());for(a=o(n.fn,"function")?n.fn():n.fn,t=0;t<e.length;t++)i=e[t],r=i.split("."),1===r.length?Modernizr[r[0]]=a:(!Modernizr[r[0]]||Modernizr[r[0]]instanceof Boolean||(Modernizr[r[0]]=new Boolean(Modernizr[r[0]])),Modernizr[r[0]][r[1]]=a),f.push((a?"":"no-")+r.join("-"))}}function t(e){var n=u.className,A=Modernizr._config.classPrefix||"";if(c&&(n=n.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+A+"no-js(\\s|$)");n=n.replace(o,"$1"+A+"js$2")}Modernizr._config.enableClasses&&(n+=" "+A+e.join(" "+A),c?u.className.baseVal=n:u.className=n)}function i(e,n){if("object"==typeof e)for(var A in e)l(e,A)&&i(A,e[A]);else{e=e.toLowerCase();var o=e.split("."),a=Modernizr[o[0]];if(2==o.length&&(a=a[o[1]]),"undefined"!=typeof a)return Modernizr;n="function"==typeof n?n():n,1==o.length?Modernizr[o[0]]=n:(!Modernizr[o[0]]||Modernizr[o[0]]instanceof Boolean||(Modernizr[o[0]]=new Boolean(Modernizr[o[0]])),Modernizr[o[0]][o[1]]=n),t([(n&&0!=n?"":"no-")+o.join("-")]),Modernizr._trigger(e,n)}return Modernizr}var s=[],r={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var A=this;setTimeout(function(){n(A[e])},0)},addTest:function(e,n,A){s.push({name:e,fn:n,options:A})},addAsyncTest:function(e){s.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=r,Modernizr=new Modernizr;var l,f=[];!function(){var e={}.hasOwnProperty;l=o(e,"undefined")||o(e.call,"undefined")?function(e,n){return n in e&&o(e.constructor.prototype[n],"undefined")}:function(n,A){return e.call(n,A)}}();var u=n.documentElement,c="svg"===u.nodeName.toLowerCase();r._l={},r.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},r._trigger=function(e,n){if(this._l[e]){var A=this._l[e];setTimeout(function(){var e,o;for(e=0;e<A.length;e++)(o=A[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){r.addTest=i}),Modernizr.addAsyncTest(function(){function e(e,n,A){function o(n){var o=n&&"load"===n.type?1==a.width:!1,t="webp"===e;i(e,t&&o?new Boolean(o):o),A&&A(n)}var a=new Image;a.onerror=o,a.onload=o,a.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],A=n.shift();e(A.name,A.uri,function(A){if(A&&"load"===A.type)for(var o=0;o<n.length;o++)e(n[o].name,n[o].uri)})}),a(),delete r.addTest,delete r.addAsyncTest;for(var p=0;p<Modernizr._q.length;p++)Modernizr._q[p]();e.Modernizr=Modernizr}(window,document);
+    </script>
   </head>
 
   <body>
@@ -182,7 +200,7 @@
             data-tab-toggle-glazing
           >
             <img src="assets/img/glazing/icons/1.png" alt="#" />
-            <a class="tree_link">Деревянное <br />остекление</a>
+            <a href="#" class="tree_link">Деревянное <br />остекление</a>
           </div>
           <div
             class="glazing_block text-center wow fadeInUp"
@@ -190,7 +208,7 @@
             data-tab-toggle-glazing
           >
             <img src="assets/img/glazing/icons/2.png" alt="#" />
-            <a class="aluminum_link">Алюминиевое <br />остекление</a>
+            <a href="#" class="aluminum_link">Алюминиевое <br />остекление</a>
           </div>
           <div
             class="glazing_block text-center wow fadeInUp"
@@ -198,7 +216,7 @@
             data-tab-toggle-glazing
           >
             <img src="assets/img/glazing/icons/3.png" alt="#" />
-            <a class="plastic_link"
+            <a href="#" class="plastic_link"
               >Остекление <br />пластиковыми <br />рамами</a
             >
           </div>
@@ -208,7 +226,7 @@
             data-tab-toggle-glazing
           >
             <img src="assets/img/glazing/icons/4.png" alt="#" />
-            <a class="french_link"
+            <a href="#" class="french_link"
               >Французское <br />остекление <br />(панорамное)</a
             >
           </div>
@@ -218,7 +236,7 @@
             data-tab-toggle-glazing
           >
             <img src="assets/img/glazing/icons/5.png" alt="#" />
-            <a class="rise_link">Остекление <br />с выносом</a>
+            <a href="#" class="rise_link">Остекление <br />с выносом</a>
           </div>
         </div>
 
@@ -252,7 +270,13 @@
           <div class="col-md-6 no-padding">
             <div class="glazing_warm">
               <h3>теплое</h3>
-              <img src="assets/img/glazing/img_warm.png" alt="#" />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="assets/img/glazing/img_warm.webp"
+                />
+                <img src="assets/img/glazing/img_warm.png" alt="#" />
+              </picture>
               <ul>
                 <li>Конструктивная толщина профиля: 58-78 м</li>
                 <li>Остекление: однокамерные и двухкамерные стеклопакеты</li>
@@ -472,22 +496,22 @@
               class="internal_link no_click after_click"
               data-tab-toggle-decoration
             >
-              <a>Внутренняя отделка</a>
+              <a href="#">Внутренняя отделка</a>
             </div>
           </div>
           <div class="decoration_item wow fadeInUp" data-wow-delay="0.1s">
             <div class="external_link no_click" data-tab-toggle-decoration>
-              <a>Внешняя отделка</a>
+              <a href="#">Внешняя отделка</a>
             </div>
           </div>
           <div class="decoration_item wow fadeInUp" data-wow-delay="0.2s">
             <div class="rising_link no_click" data-tab-toggle-decoration>
-              <a>Выносное остекление</a>
+              <a href="#">Выносное остекление</a>
             </div>
           </div>
           <div class="decoration_item wow fadeInUp" data-wow-delay="0.3s">
             <div class="roof_link no_click" data-tab-toggle-decoration>
-              <a>Крыша на балкон</a>
+              <a href="#">Крыша на балкон</a>
             </div>
           </div>
         </div>
@@ -1145,7 +1169,7 @@
               Успей сэкономить на остеклении! Только до 11 августа!
             </p>
             <div class="timer1" id="timer">
-              <div><h4>ДО ЗАВЕРШЕНИЯ АКЦИИ:</h4></div>
+              <div><h3 style="font-size: 1.3em">ДО ЗАВЕРШЕНИЯ АКЦИИ:</h3></div>
               <div class="container1">
                 <div class="numbers1">
                   <div><span id="days">08</span></div>
@@ -1219,6 +1243,8 @@
         <div class="row">
           <div class="col-lg-6 col-md-6 wow fadeInLeft">
             <iframe
+              loading="lazy"
+              title="google map"
               class="map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2235.2618174047184!2d37.602909316080805!3d55.92749898597191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b53a0ac32d875f%3A0xe1064c1e68c2b74a!2z0JLRi9GB0YLQsNCy0L7Rh9C90LDRjywgNTMsINCS0LXRiNC60LgsINCc0L7RgdC60L7QstGB0LrQsNGPINC-0LHQuy4sIDEyNzU0Mw!5e0!3m2!1sru!2sru!4v1510535523155"
               width="550"
@@ -1287,6 +1313,25 @@
           <div class="col-sm-4 col-sm-pull-8 col-xs-12">
             <div class="copyright"></div>
           </div>
+        </div>
+
+        <!-- Development info -->
+        <div style="margin-top: 50px; text-align: center">
+          <mark>&lt; Development &gt;</mark>
+          &VerticalSeparator;
+          <a
+            href="https://www.udemy.com/course/javascript_practice/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Markup by Udemy course</a
+          >
+          &VerticalSeparator;
+          <a
+            href="https://github.com/Filgeary"
+            target="_blank"
+            rel="noopener noreferrer"
+            >JS code by Filgeary</a
+          >
         </div>
       </div>
     </footer>
