@@ -424,6 +424,7 @@ textarea:focus {
   display: block;
   margin: 0 auto;
   margin-bottom: 2rem;
+  cursor: pointer;
 }
 
 .glazing_block a {
@@ -1895,6 +1896,19 @@ textarea:focus {
   .popup_calc_profile_button {
     padding: 1rem 5rem;
   }
+}
+
+/* Add classes */
+.balcon_icons_img {
+  cursor: pointer;
+}
+
+.form-control-select {
+  cursor: pointer;
+}
+
+.label {
+  cursor: pointer;
 }
 
 /* small devices, tablets */

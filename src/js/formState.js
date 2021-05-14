@@ -11,6 +11,10 @@ const formState = (state) => {
   function bindActionsToElements(event, elements, prop) {
     elements.forEach((item, i) => {
       item.addEventListener(event, () => {
+        if (!state.type) {
+          state.type = selectType[0].value;
+        }
+
         if (item.nodeName === 'SPAN') {
           state[prop] = item.getAttribute('data-tab-toggle-balcon-icons');
         }
@@ -27,7 +31,7 @@ const formState = (state) => {
               }
             });
           } else {
-            item.value = item.value.replace(/\D/, '');
+            item.value = item.value.replace(/\D+/, '');
             state[prop] = item.value;
           }
         }
