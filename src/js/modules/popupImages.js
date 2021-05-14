@@ -27,6 +27,12 @@ const popupImages = ({ contSelector, imageSelector, popupSelector }) => {
       imageBox.style.display = 'none';
     }
   });
+
+  imagesCont.addEventListener('keydown', (evt) => {
+    if (evt.code === 'Escape') {
+      imageBox.style.display = 'none';
+    }
+  });
 };
 
 export default popupImages;

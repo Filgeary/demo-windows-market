@@ -7,14 +7,6 @@ const forms = (url, timerId, state) => {
     error: 'Что-то пошло не так...',
   };
 
-  document.addEventListener('input', (evt) => {
-    const target = evt.target;
-
-    if (target && target.matches('input[name="user_phone"]')) {
-      target.value = target.value.replace(/\D/, '');
-    }
-  });
-
   document.addEventListener('submit', (evt) => {
     const target = evt.target;
     const statusElement = document.createElement('div');
